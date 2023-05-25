@@ -1,17 +1,26 @@
+/* made sure the whole sites hve the same background and use the same font and even created a border */
 body {
     background-color: moccasin;
     text-align: center;
     font-style: italic;
+    border: 10px green inset;
 }
 
 h1 {
     font-size: 30px;
 }
 
+/* since my home page is practically empty gave the font size an id to only change its value to 60px to look better */
+#p1 {
+    font-size: 60px;
+}
+
+/* made all paragraph fonts size 20 px */
 p {
     font-size: 20px
 }
 
+/* made all the divs be constructed in the same way */
 div {
     text-align: center;
     font-size: 20px;
@@ -20,16 +29,27 @@ div {
     margin-bottom: 1rem;
 }
 
+
+/* created a hover effect for when user goes over any divs to select */
 div :hover {
     color: whitesmoke;
 }
 
-.img1, .img3 { 
+/* made my homepage and contact us page(1st image and 3rd images) sixe 30px */ 
+#img1, #img3 { 
     margin: 30px;
 
 }
 
-table, th, td, ul, ol{
+
+form {
+    margin-bottom: 5rem;
+}
+
+
+
+/* created a class for tables to be used to be centered text and solid black lines */
+table, th, td{
     border-bottom: 1px solid black;  
         margin-left: auto;  
         margin-right: auto;  
@@ -37,14 +57,25 @@ table, th, td, ul, ol{
         width: 300px;  
         text-align: center;  
         font-size: 18px;  
-        }   
+        }  
 
+ul, ol {
+    margin-left: auto;  
+    margin-right: auto;  
+    border-collapse: collapse;    
+    width: 300px;  
+    text-align: center;  
+    font-size: 18px;  
 
+}
+
+/* decided to make every even line in my table rows silver */
 tr:nth-child(even) {
     background-color: silver;
 
 }
 
+/*created a hover effect for my table rows to light up skyblue when the user is about to select it */
 tr:hover {
     background-color: lightskyblue;
 }
